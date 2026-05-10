@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zamloans-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SW_API_KEY
+        value: sw_aef1d392bbf45ceec687af24b325b133ab0d561fabe3bba567630b2a
+      - key: NODE_ENV
+        value: production
